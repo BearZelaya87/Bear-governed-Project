@@ -25,7 +25,7 @@ from specialists import _data as D  # noqa: E402
 LENS = {
     "diagnostic": ["why", "differ", "compare", "driver", "cause", "versus", " vs ", "explain"],
     "predictive": ["predict", "will ", "risk", "likely", "high-risk", "high risk", "score"],
-    "prescriptive": ["should", "recommend", "whom", "who do we", "what to do", "action", "call first", "reorder", "isolate", "hold", "outreach", "restructure"],
+    "prescriptive": ["should", "recommend", "whom", "who do we", "what to do", "action", "call first", "reorder", "isolate", "hold", "outreach", "restructure", "who gets", "follow-up call", "home visit", "pharmacist"],
     "descriptive": ["how many", "rate", "trend", "which segment", "which ward", "breakdown", "summar", "volume", "mix", "by month", "drive", "carry"],
 }
 
