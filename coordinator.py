@@ -36,10 +36,19 @@ def lenses_for(q):
     return found or ["descriptive"]
 
 
+SHORT_NAMES = {
+    "lakeshore": "Lakeshore General",
+    "brigid": "St. Brigid",
+    "riverbend": "Riverbend",
+    "pinecrest": "Pinecrest Rural",
+    "harbor": "Harbor Children's and Adults",
+}
+
+
 def members_in(q):
-    names = [c.name for c in D.world().clients]
-    found = [n for n in names if n.lower() in q.lower()]
-    return sorted(found, key=lambda n: q.lower().index(n.lower()))
+    t = q.lower()
+    found = [(t.index(short), full) for short, full in SHORT_NAMES.items() if short in t]
+    return [full for _, full in sorted(found)]
 
 
 def record_ids_in(q):
